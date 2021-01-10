@@ -98,7 +98,7 @@ h2 {
   font-size: 48px;
   line-height: 120%;
   font-weight: normal;
-
+  margin-top: 0;
 }
 /* Grouping content
    ========================================================================== */
@@ -419,7 +419,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
+  font-size: 16px;
+  line-height: 19px;
   &__logo {
     position: absolute;
     top: 30px;
@@ -447,6 +448,7 @@ header {
     color: $black;
     outline-style: none;
     cursor: pointer;
+    font-weight: normal;
     &:hover {
       background-color: rgba(27, 27, 27, 0.1);
     }
@@ -459,6 +461,9 @@ header {
 /* contacts and about sections */
 .about {
   margin-top: 40px;
+  &__text {
+    font-size: 24px;
+  }
 }
 
 .contacts {
@@ -467,6 +472,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-bottom: 20px;
     >div:first-child{
       border-right: 1px solid $gray1;
       padding-left: 100px;
