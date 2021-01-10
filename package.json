@@ -1,0 +1,18 @@
+{
+  "name": "sf_drive",
+  "version": "1.0.0",
+  "description": "Carsharing site",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "start": "node app.js",
+    "compile-sass": "sass public/scss/style.scss public/css/main.css",
+    "watch-sass": "sass --watch public/scss/style.scss:public/css/main.css"
+  },
+  "author": "Ivan Butakov",
+  "license": "ISC"
+}
