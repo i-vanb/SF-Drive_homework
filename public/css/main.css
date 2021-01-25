@@ -512,6 +512,11 @@ header {
 }
 .footer__socials > a {
   margin: 0 10px;
+  cursor: pointer;
+}
+.footer__socials > a > img:hover {
+  transform: scale(1.2);
+  transition: all 0.4s ease;
 }
 
 /* end footer */

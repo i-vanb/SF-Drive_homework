@@ -30,6 +30,7 @@ $secondary: #f7f9fb;
 /* generic */
 .is-animated {
   transition: all .4s ease;
+
 }
 
 .content-container {
@@ -540,9 +541,15 @@ header {
 
   &__socials {
     margin: 0;
-
     &>a {
       margin: 0 10px;
+      cursor: pointer;
+      &>img:hover {
+        transform: scale(1.2);
+        transition: all .4s ease;
+      }
+
+
     }
   }
 }
