@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
     <link type="text/css" rel="stylesheet" href="/css/main.css">
 </head>
@@ -9,18 +10,33 @@
 
 <header class="header">
     <a class="header__logo" href="/"><img src="/img/logo.svg" alt="logo" width="115px"></a>
-    <nav class="header__nav">
+    <nav class="header__nav is-desktop">
         <a class="header__nav__link is-animated is-active" href="#">О Нас</a>
         <a class="header__nav__link is-animated" href="#">Условия</a>
-        <a class="header__nav__link is-animated" href="#">Частые вопросы</a>
+        <a class="header__nav__link is-animated" href="/faq">Частые вопросы</a>
     </nav>
-    <button class="header__authBtn is-animated">Войти</button>
+    <button class="header__authBtn is-animated is-desktop">Войти</button>
+    <div id="burger-menu" class="header__menu-icon is-mobile is-active"><img src="/img/burger-menu.svg" alt="logo"></div>
 </header>
 
 <main class="main">
 
+    <div id="mobile-menu" class="menu__mobile is-mobile is-animated">
+        <div class="menu__mobile__header">
+            <img src="/img/logo.svg" alt="logo" width="115px">
+            <img id="close-menu" src="/img/close.svg" alt="logo" >
+        </div>
+        <nav class="menu__mobile__nav">
+            <a class="menu__mobile__nav_link is-active" href="#">О Нас</a>
+            <a class="menu__mobile__nav_link" href="#">Условия</a>
+            <a class="menu__mobile__nav_link" href="/faq">Частые вопросы</a>
+        </nav>
+        <button class="menu__mobile__button is-mobile">Войти</button>
+    </div>
+
     <section class="about">
         <div class="content-container">
+            <!--            <div class="menu__button icon-menu is-mobile"></div>-->
             <img src="/img/about_team.svg" alt="drawn team">
             <h1>О нас</h1>
             <p class="about__text">Это учебный проект, созданный с целью получения боевого опыта в разработке
@@ -85,13 +101,12 @@
 
 <footer class="footer">
     <p class="footer__rights">© SkillDrive Inc. 2020</p>
-    <div  class="footer__socials">
+    <div class="footer__socials">
         <a href="" target="_blank" rel="nofollow"><img src="img/sm_icons/1.svg" alt="vkontakte link"></a>
-        <a href="" target="_blank" rel="nofollow"><img src="img/sm_icons/2.svg"  alt="instagram link"></a>
-        <a href="" target="_blank" rel="nofollow"><img src="img/sm_icons/3.svg"  alt="facebook link"></a>
+        <a href="" target="_blank" rel="nofollow"><img src="img/sm_icons/2.svg" alt="instagram link"></a>
+        <a href="" target="_blank" rel="nofollow"><img src="img/sm_icons/3.svg" alt="facebook link"></a>
     </div>
 </footer>
-
-<script> </script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

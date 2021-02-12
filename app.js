@@ -13,6 +13,10 @@ app.get('/about', (req, res) => {
     res.sendFile(__dirname + '/view/About.html');
 });
 
+app.get('/faq', (req, res) => {
+    res.sendFile(__dirname + '/view/FAQ.html');
+});
+
 app.use((req, res) => {
     res.status(404)
     res.sendFile(__dirname + '/view/404.html')
