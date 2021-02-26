@@ -1,0 +1,74 @@
+.about {
+  margin-top: 40px;
+
+  img {
+    @include breakpoint(medium) {
+      width: 90%;
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    @include breakpoint(medium) {
+      width: 90%;
+      margin: 0 auto;
+    }
+    @include breakpoint(small) {
+      font-size: 16px;
+    }
+  }
+}
+
+.contacts {
+  background-color: $secondary;
+
+  &__data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20px;
+    @include breakpoint(small) {
+      flex-direction: column;
+    }
+
+
+    > div:first-child {
+      border-right: 1px solid $gray1;
+      padding-left: 100px;
+      @include breakpoint(small) {
+        padding: 0;
+        border-style: none;
+      }
+    }
+
+    > div:last-child {
+      padding-right: 100px;
+      @include breakpoint(small) {
+        padding: 0;
+      }
+    }
+
+
+    &_col {
+      flex: 1;
+
+      &_label {
+        font-size: 14px;
+        color: $gray2;
+        margin: 5px 0;
+        @include breakpoint(small) {
+          font-size: 12px;
+        }
+      }
+
+      &_val {
+        font-size: 20px;
+        color: $black0;
+        margin: 0;
+        @include breakpoint(small) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

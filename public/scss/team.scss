@@ -1,0 +1,42 @@
+.team {
+  &__cards {
+    &_item {
+      display: inline-block;
+      margin: 30px 39px;
+      padding: 0;
+      @include breakpoint(small) {
+        width: 45%;
+        margin: 15px 0;
+      }
+
+      &_photo {
+        margin-bottom: 19px;
+        @include breakpoint(small) {
+          width: 80px;
+          margin-bottom: 15px;
+        }
+      }
+
+      &_name {
+        font-weight: normal;
+        font-size: 20px;
+        color: $black0;
+        margin: 4px 0;
+        @include breakpoint(small) {
+          font-size: 16px;
+          margin: 0;
+        }
+      }
+
+      &_pro {
+        font-size: 14px;
+        color: $gray3;
+        margin: 4px 0;
+        @include breakpoint(small) {
+          font-size: 12px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
