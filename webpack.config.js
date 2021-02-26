@@ -8,13 +8,21 @@ module.exports = {
         path: path.resolve(__dirname, 'public/dist'),
         filename: 'main.js'
     },
+
     mode: "production",
+
     plugins: [new MiniCssExtractPlugin()],
+
     module: {
         rules: [
             {
                 test: /\.s[ac]ss$/i,
-                use: ["style-loader", MiniCssExtractPlugin.loader, "css-loader", "sass-loader",],
+                use: ["style-loader",  {
+                    loader: MiniCssExtractPlugin.loader,
+                    options: {
+                        esModule: false,
+                    },
+                }, "css-loader", "sass-loader",]
             },
             {
                 test: /\.(ttf|aot)$/,

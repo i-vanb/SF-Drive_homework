@@ -3,9 +3,8 @@ import '../scss/style.scss'
 import {initMenu} from "./menu";
 import {initFaq} from "./faq";
 
-document.addEventListener("DOMContentLoaded", initScript)
-
 function initScript() {
+    console.log('ВЫЗОВ ИНИТ')
     initMenu()
     initFaq()
     // const burgerMenu = document.querySelector("#burger-menu")
@@ -48,3 +47,5 @@ function initScript() {
     // }
 
 }
+
+document.addEventListener("DOMContentLoaded", initScript)
